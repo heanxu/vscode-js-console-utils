@@ -65,7 +65,7 @@ function activate(context) {
       const fileExtend = currentFilePath.split(".").pop();
 
       if (fileExtend === "go") {
-        insertText("fmt.println()");
+        insertText("fmt.Println()");
       } else {
         const selection = editor.selection;
         const text = editor.document.getText(selection);
